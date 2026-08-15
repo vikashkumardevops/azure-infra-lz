@@ -52,8 +52,8 @@ module "app_gateway" {
   app_gateways = var.app_gateways
 }
 
-module "linux_virtual_machine" {
-  depends_on = [module.nics]
-  source     = "../../Modules/azurerm_linux_virtual_machine"
-  vms        = var.vms
-}
+# module "linux_virtual_machine" {
+#   depends_on = [module.nics]
+#   source     = "../../Modules/azurerm_linux_virtual_machine"
+#   vms        = var.vms
+# }
